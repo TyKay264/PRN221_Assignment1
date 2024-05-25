@@ -1,0 +1,20 @@
+﻿FUNewsManagementSystem
+1.0.0.0
+
+winexe
+C#
+.cs
+D:\Learning FPT\Kì_7\SWD392\FUNewsManagementSystemSolution\FUNewsManagementSystem\obj\Debug\net7.0-windows\
+FUNewsManagementSystem
+none
+false
+TRACE;DEBUG;NET;NET7_0;NETCOREAPP
+D:\Learning FPT\Kì_7\SWD392\FUNewsManagementSystemSolution\FUNewsManagementSystem\App.xaml
+7135642485
+
+111952498164
+248-210003986
+AccountManagement.xaml;CreateNewsArticleWindow.xaml;CreateSystemAccount.xaml;Login.xaml;MainWindow.xaml;UpdateSystemAccount.xaml;ViewHistoryCreated.xaml;
+
+True
+
