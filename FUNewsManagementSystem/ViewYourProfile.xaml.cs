@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -55,7 +56,12 @@ namespace FUNewsManagementSystem
                     AccountEmail = accountEmail,
                     AccountPassword = accountPassword,
                     AccountRole = 1
-                };
+                }; 
+                if (!IsValidEmail(accountEmail))
+                {
+                    MessageBox.Show("Email must have format: example@FUNewsManagement.org");
+                    return;
+                }
                 _accountService.UpdateSystemAccount(updatedAccount);
 
                 MessageBox.Show("Account information updated successfully!");
@@ -94,6 +100,13 @@ namespace FUNewsManagementSystem
             cboAccountRole.ItemsSource = accountRoles;
             cboAccountRole.DisplayMemberPath = "AccountRoleName";
             cboAccountRole.SelectedValuePath = "AccountRoleId";
+        }
+
+        private bool IsValidEmail(string email)
+        {
+            string pattern = @"^[a-zA-Z0-9._%+-]+@FUNewsManagement\.org$";
+            Regex regex = new Regex(pattern);
+            return regex.IsMatch(email);
         }
     }
 }

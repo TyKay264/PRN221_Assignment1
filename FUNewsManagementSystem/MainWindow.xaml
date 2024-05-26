@@ -53,20 +53,20 @@
 
 
             <Label x:Name="label2" Margin ="2,2,2,2" Grid.Column="0" Grid.Row="2" Content="News Title" Grid.ColumnSpan="5" />
-            <TextBox x:Name="txtNewsTitle" Margin ="4,4,4,4" Grid.Column="5" Grid.Row="2" Text="" TextWrapping="Wrap" Grid.ColumnSpan="2" IsReadOnly="False"/>
+            <TextBox x:Name="txtNewsTitle" Margin ="4,4,4,4" Grid.Column="5" Grid.Row="2" Text="" TextWrapping="Wrap" Grid.ColumnSpan="2" IsEnabled="False"/>
 
 
             <Label x:Name="label8" Margin ="2,2,2,2" Content="Created date" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="5"/>
-            <DatePicker x:Name="txtCreatedDate" Grid.Column="5" HorizontalAlignment="Left" Margin ="2,0,0,0" Grid.Row="3" VerticalAlignment="Center" Grid.ColumnSpan="2" Width="644" IsEnabled="True"/>
+            <DatePicker x:Name="txtCreatedDate" Grid.Column="5" HorizontalAlignment="Left" Margin ="2,0,0,0" Grid.Row="3" VerticalAlignment="Center" Grid.ColumnSpan="2" Width="644" IsEnabled="False"/>
 
             <Label x:Name="label3" Margin ="2,2,2,2" Content="News Content" Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="5"/>
-            <TextBox x:Name="txtNewsContent" Margin ="4,4,4,4"  Grid.Column="5" Grid.Row="4"  Text=""  Grid.ColumnSpan="2" IsReadOnly="False"/>
+            <TextBox x:Name="txtNewsContent" Margin ="4,4,4,4"  Grid.Column="5" Grid.Row="4"  Text=""  Grid.ColumnSpan="2" IsEnabled="False"/>
 
 
             <Label x:Name="label4" Margin ="2,2,2,2" Content="Modified Date" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="5"/>
-            <DatePicker x:Name="txtModifiedDate" Margin ="4,4,4,4" Grid.Column="5" Grid.Row="5" Grid.ColumnSpan="2" IsEnabled="True"/>
+            <DatePicker x:Name="txtModifiedDate" Margin ="4,4,4,4" Grid.Column="5" Grid.Row="5" Grid.ColumnSpan="2" IsEnabled="False"/>
             <Label x:Name="label5" Content="Category Id" Width="104" Grid.ColumnSpan="4" Margin="0,3,15,351" Grid.Row="6"/>
-            <ComboBox x:Name="cboCategoryId" Text="" DisplayMemberPath="CategoryName" SelectedValuePath="CategoryId"  Margin ="4,4,4,369" Grid.Column="5" Grid.Row="6" Grid.ColumnSpan="2"/>
+            <ComboBox x:Name="cboCategoryId" Text="" DisplayMemberPath="CategoryName" SelectedValuePath="CategoryId"  Margin ="4,4,4,369" Grid.Column="5" Grid.Row="6" Grid.ColumnSpan="2" IsEnabled="False"/>
 
 
 

@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -41,6 +42,11 @@ namespace FUNewsManagementSystem
                     systemAccount.AccountRole = Int32.Parse(cboAccountRole.SelectedValue.ToString());
                 }
                 systemAccount.AccountPassword = txtAccountPassword.Password;
+                if (!IsValidEmail(systemAccount.AccountEmail))
+                {
+                    MessageBox.Show("Email must have format: example@FUNewsManagement.org");
+                    return;
+                }
                 iSystemAccountService.SaveSystemAccount(systemAccount);
                 this.Close();
                 AccountManagement accountManagement = new AccountManagement();
@@ -49,6 +55,13 @@ namespace FUNewsManagementSystem
             {
                 throw new Exception(ex.Message);
             }
+        }
+
+        private bool IsValidEmail(string email)
+        {
+            string pattern = @"^[a-zA-Z0-9._%+-]+@FUNewsManagement\.org$";
+            Regex regex = new Regex(pattern);
+            return regex.IsMatch(email);
         }
 
         private void btnClose_Click(object sender, RoutedEventArgs e)

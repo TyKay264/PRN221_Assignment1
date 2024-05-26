@@ -31,8 +31,8 @@
         <TextBox x:Name="txtTagId" HorizontalAlignment="Left" Margin="171,56,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="619" Height="33" IsEnabled="False"/>
         <Label Content="Note" HorizontalAlignment="Left" Margin="10,141,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.22,0.196" FontSize="20" Height="38" Width="199"/>
         <Label Content="Tag Name" HorizontalAlignment="Left" Margin="10,94,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.22,0.196" FontSize="20" Height="42" Width="151"/>
-        <TextBox x:Name="txtTagName" HorizontalAlignment="Left" Margin="171,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="619" Height="36"/>
-        <TextBox x:Name="txtNote" HorizontalAlignment="Left" Margin="171,141,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="619" Height="37"/>
+        <TextBox x:Name="txtTagName" HorizontalAlignment="Left" Margin="171,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="619" Height="36" IsEnabled="False"/>
+        <TextBox x:Name="txtNote" HorizontalAlignment="Left" Margin="171,141,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="619" Height="37" IsEnabled="False"/>
         <TextBox x:Name="txtSearch" HorizontalAlignment="Left" Margin="587,22,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontWeight="Bold"/>
         <Label Content="Search name" HorizontalAlignment="Left" Margin="504,18,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.448,0.211" FontWeight="Bold"/>
         <Button Content="Search" x:Name="btnSearch" HorizontalAlignment="Left" Margin="723,19,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.023,-0.177" Height="23" Width="67" FontWeight="Bold" Click="btnSearch_Click"/>

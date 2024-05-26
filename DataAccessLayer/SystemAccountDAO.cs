@@ -12,7 +12,7 @@ namespace DataAccessLayer
         public static SystemAccount GetSystemAccountByUsername(string accountEmail)
         {
             using var context = new FunewsManagementDbContext();
-            return context.SystemAccounts.SingleOrDefault(c => c.AccountEmail.Equals(accountEmail));
+            return context.SystemAccounts.FirstOrDefault(c => c.AccountEmail.Equals(accountEmail));
         }
 
         public static SystemAccount GetSystemAccountById(short accountId)
