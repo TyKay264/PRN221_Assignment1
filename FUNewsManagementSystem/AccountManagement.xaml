@@ -37,7 +37,7 @@
             </Grid.ColumnDefinitions>
 
 
-            <Label x:Name="label" Content="FU News  Account Management" Grid.Column="2" Grid.Row="0" FontSize="36" Grid.ColumnSpan="2" HorizontalAlignment="Center" Width="569"/>
+            <Label x:Name="label" Content="FU Account Management" Grid.Row="0" FontSize="36" Grid.ColumnSpan="4" HorizontalAlignment="Left" Width="431" Margin="30,2,0,28" Grid.RowSpan="2"/>
 
 
             <Label x:Name="label1" Margin ="2,2,2,2"  Content="Account ID" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2"/>
@@ -67,6 +67,9 @@
             <Button x:Name="btnUpdate" Content="Update" Grid.Column="3" HorizontalAlignment="Left" Margin="318,366,0,15" Grid.Row="6" Width="118" Background="#FF1B7140" Foreground="White" Grid.RowSpan="2" RenderTransformOrigin="0.37,0.2" Click="btnUpdate_Click"/>
             <Button x:Name="btnDelete" Content="Delete" Grid.Column="3" HorizontalAlignment="Left" Margin="161,366,0,15" Grid.Row="6" Grid.RowSpan="2" Width="127" Foreground="White" Background="#FFA2AA3D" Click="btnDelete_Click"/>
             <Button x:Name="btnClose" Content="Close" Grid.Column="3" HorizontalAlignment="Left" Margin="466,366,0,17" Grid.Row="6" Grid.RowSpan="2" Width="120" Background="#FFEF8F18" Foreground="White" Click="btnClose_Click"/>
+            <TextBox x:Name="txtSearch" HorizontalAlignment="Left" Margin="381,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="120" FontWeight="Bold" Grid.Column="3"/>
+            <Label Content="Search name" HorizontalAlignment="Left" Margin="298,0,0,0" VerticalAlignment="Center" RenderTransformOrigin="0.448,0.211" FontWeight="Bold" Grid.Column="3"/>
+            <Button Content="Search" x:Name="btnSearch" HorizontalAlignment="Left" Margin="517,0,0,0" VerticalAlignment="Center" RenderTransformOrigin="0.023,-0.177" Height="23" Width="67" FontWeight="Bold" Click="btnSearch_Click" Grid.Column="3"/>
 
 
         </Grid>

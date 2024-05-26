@@ -140,5 +140,17 @@ namespace FUNewsManagementSystem
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void btnSearch_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                List<Category> category = iCategoryService.GetCategoryByName(txtSearch.Text);
+                dgData.ItemsSource = category;
+            } catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

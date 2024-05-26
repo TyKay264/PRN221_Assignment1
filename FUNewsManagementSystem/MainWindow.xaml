@@ -45,7 +45,7 @@
             </Grid.ColumnDefinitions>
 
 
-            <Label x:Name="label" Content="FU News Management" Grid.Column="6" Grid.Row="0" FontSize="36" HorizontalAlignment="Left" Width="466" Margin="37,0,0,0"/>
+            <Label x:Name="label" Content="FU News Management" Grid.Column="3" Grid.Row="0" FontSize="36" HorizontalAlignment="Left" Width="466" Margin="10,-3,0,3" Grid.ColumnSpan="4"/>
 
 
             <Label x:Name="label1" Margin ="2,2,2,2"  Content="News Article ID" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="5"/>
@@ -70,14 +70,17 @@
 
 
 
-            <DataGrid x:Name="dgData" Margin ="4,50,0,55" Grid.Row="6" Grid.ColumnSpan="2" SelectionChanged="dgData_SelectionChanged" Grid.Column="5" />
+            <DataGrid x:Name="dgData" Margin ="1,55,3,69" Grid.Row="6" Grid.ColumnSpan="2" SelectionChanged="dgData_SelectionChanged" Grid.Column="5" />
             <Button  x:Name="btnCreate" Content="Create" HorizontalAlignment="Left" Margin="38,364,0,17" Grid.Row="6" Grid.RowSpan="2" Width="121"  Background="#FF0099FF" BorderBrush="White" Foreground="White" Grid.ColumnSpan="2" Grid.Column="5" Click="btnCreate_Click"/>
             <Button x:Name="btnUpdate" Content="Update" Grid.Column="6" HorizontalAlignment="Left" Margin="143,364,0,17" Grid.Row="6" Width="118" Background="#FF1B7140" Foreground="White" Grid.RowSpan="2" RenderTransformOrigin="0.37,0.2" Click="btnUpdate_Click"/>
             <Button x:Name="btnDelete" Content="Delete" Grid.Column="6" HorizontalAlignment="Left" Margin="288,364,0,17" Grid.Row="6" Grid.RowSpan="2" Width="119" Foreground="White" Background="#FFA2AA3D" Click="btnDelete_Click"/>
             <Button x:Name="btnClose" Content="Close" Grid.Column="6" HorizontalAlignment="Left" Margin="446,365,0,18" Grid.Row="6" Grid.RowSpan="2" Width="120" Background="#FFEF8F18" Foreground="White" Click="btnClose_Click"/>
-            <Button  x:Name="btnLogin" Content="LOGIN" HorizontalAlignment="Left" Width="90" Background="BlueViolet" Foreground="White" Margin="476,14,0,14" Click="btnLogin_Click_1" Grid.Column="6" />
-            <Button x:Name="btnViewProfile" Content="View profile" HorizontalAlignment="Left" Margin="20,365,0,18" Grid.Row="6" Width="120" Background="Purple" Foreground="White" Click="btnViewProfile_Click" Grid.ColumnSpan="5" Grid.RowSpan="2"/>
-            <Button Content="View History" x:Name="btnViewHistory" HorizontalAlignment="Left" Margin="20,254,0,0" Grid.Row="6" VerticalAlignment="Top" Width="120" Height="62" Grid.ColumnSpan="5" Background="DarkCyan" Foreground="White" Click="Button_Click"/>
+            <Button x:Name="btnViewProfile" Content="View profile" HorizontalAlignment="Left" Margin="18,187,0,166" Grid.Row="6" Width="120" Background="Purple" Foreground="White" Click="btnViewProfile_Click" Grid.ColumnSpan="5"/>
+            <Button Content="View History" x:Name="btnViewHistory" HorizontalAlignment="Left" Margin="20,278,0,0" Grid.Row="6" VerticalAlignment="Top" Width="118" Height="62" Grid.ColumnSpan="5" Background="DarkCyan" Foreground="White" Click="Button_Click"/>
+            <TextBox x:Name="txtSearch" HorizontalAlignment="Left" Margin="351,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="120" FontWeight="Bold" Grid.Column="6"/>
+            <Label Content="Search title" HorizontalAlignment="Left" Margin="268,0,0,0" VerticalAlignment="Center" RenderTransformOrigin="0.448,0.211" FontWeight="Bold" Grid.Column="6"/>
+            <Button Content="Search" x:Name="btnSearch" HorizontalAlignment="Left" Margin="487,0,0,0" VerticalAlignment="Center" RenderTransformOrigin="0.023,-0.177" Height="24" Width="67" FontWeight="Bold" Click="btnSearch_Click" Grid.Column="6"/>
+            <Button  x:Name="btnLogin" Content="LOGIN" HorizontalAlignment="Left" Width="120" Background="BlueViolet" Foreground="White" Margin="18,365,0,20" Click="btnLogin_Click_1" Grid.Row="6" RenderTransformOrigin="0.427,0.52" Grid.RowSpan="2" Grid.ColumnSpan="5" />
 
 
 

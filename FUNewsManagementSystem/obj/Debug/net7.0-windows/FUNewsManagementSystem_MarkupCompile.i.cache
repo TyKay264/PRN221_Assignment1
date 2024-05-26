@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 D:\Learning FPT\Kì_7\SWD392\FUNewsManagementSystemSolution\FUNewsManagementSystem\App.xaml
-12-1778726808
+18759470058
 
-16173187079
+221971537280
 248-210003986
-AccountManagement.xaml;CategoryList.xaml;CreateCategory.xaml;CreateNewsArticleWindow.xaml;CreateSystemAccount.xaml;Login.xaml;MainMenu.xaml;MainWindow.xaml;UpdateCategory.xaml;UpdateNewsArticle.xaml;UpdateSystemAccount.xaml;ViewHistoryCreated.xaml;
+AccountManagement.xaml;AdminMenu.xaml;CategoryList.xaml;CreateCategory.xaml;CreateNewsArticleWindow.xaml;CreateSystemAccount.xaml;CreateTag.xaml;Login.xaml;MainMenu.xaml;MainWindow.xaml;Report.xaml;TagList.xaml;UpdateCategory.xaml;UpdateNewsArticle.xaml;UpdateSystemAccount.xaml;UpdateTag.xaml;ViewHistoryCreated.xaml;ViewYourProfile.xaml;
 
 True
 

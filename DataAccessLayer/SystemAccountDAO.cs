@@ -78,5 +78,11 @@ namespace DataAccessLayer
                 throw new Exception(ex.Message);
             }
         }
+
+        public static List<SystemAccount> GetSystemAccountByName(string name)
+        {
+            using var context = new FunewsManagementDbContext();
+            return context.SystemAccounts.Where(c => c.AccountName.Contains(name)).ToList();
+        }
     }
 }

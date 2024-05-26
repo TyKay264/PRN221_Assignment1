@@ -15,5 +15,7 @@ namespace Services
         void DeleteNewsArticle(NewsArticle newsArticle);
         NewsArticle GetNewsArticlesById(string id);
         List<NewsArticle> GetNewsArticlesByWriterId(int writerId);
+        List<NewsArticle> GetReportStatistic(DateTime start, DateTime end);
+        List<NewsArticle> GetNewsArticlesByTitle(string title);
     }
 }

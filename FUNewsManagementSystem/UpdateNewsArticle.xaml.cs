@@ -1,4 +1,5 @@
 ﻿using BusinessObjects;
+using Microsoft.EntityFrameworkCore;
 using Services;
 using System;
 using System.Collections.Generic;
@@ -35,7 +36,33 @@ namespace FUNewsManagementSystem
 
         private void btnCreate_Click(object sender, RoutedEventArgs e)
         {
-
+            try
+            {
+                if (_newsArticle != null)
+                {
+                    _newsArticle.NewsTitle = txtNewsTitle.Text;
+                    _newsArticle.CreatedDate = txtCreatedDate.SelectedDate ?? DateTime.Now;
+                    _newsArticle.NewsContent = txtNewsContent.Text;
+                    _newsArticle.CategoryId = (short)cboCategoryId.SelectedValue;
+                    iNewsArticleService.UpdateNewsArticle(_newsArticle);
+                    this.Close();
+                    MainWindow mainWindow = new MainWindow();   
+                    mainWindow.Show();
+                }
+                else
+                {
+                    MessageBox.Show("You must select an Account or You don't have an authorization to Update");
+                }
+            }
+            catch (DbUpdateConcurrencyException ex)
+            {
+                MessageBox.Show("The account has been modified or deleted by another user. Please reload and try again.", "Concurrency Error", MessageBoxButton.OK, MessageBoxImage.Warning);
+                LoadNewsArticle();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnClose_Click(object sender, RoutedEventArgs e)
@@ -66,12 +93,11 @@ namespace FUNewsManagementSystem
             {
                 var categoryList = iCategoryService.GetCategories();
                 cboCategoryId.ItemsSource = categoryList;
-                cboCategoryId.DisplayMemberPath = "CategoryId";
+                cboCategoryId.DisplayMemberPath = "CategoryName";
                 cboCategoryId.SelectedValuePath = "CategoryId";
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error loading categories: {ex.Message}");
                 throw new Exception(ex.Message);
             }
         }

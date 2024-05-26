@@ -21,7 +21,7 @@
                 <!-- Gold -->
             </LinearGradientBrush>
         </Grid.Background>
-        <StackPanel Margin="10" Loaded="Window_Loaded">
+        <StackPanel Margin="10">
 
             <Label x:Name="label1" Margin ="2,2,2,2"  Content="News Article ID" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2"/>
             <TextBox x:Name="txtNewsArticleID" Margin ="4,4,4,4" Grid.Column="2" Grid.Row="1" Text="" TextWrapping="Wrap" Grid.ColumnSpan="2" IsEnabled="False" Width="753" />
@@ -32,14 +32,15 @@
 
 
             <Label x:Name="label8" Margin ="2,2,2,2" Content="Created date" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2"/>
-            <DatePicker x:Name="txtCreatedDate" Width="719"/>
+            <DatePicker x:Name="txtCreatedDate" Width="747"/>
 
             <Label x:Name="label3" Margin ="2,2,2,2" Content="News Content" Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="2"/>
             <TextBox x:Name="txtNewsContent" Margin ="4,4,4,4"  Grid.Column="2" Grid.Row="4"  Text=""  Grid.ColumnSpan="2" Height="25" Width="759"/>
 
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0, 15, 0, 0" Loaded="Window_Loaded">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0, 15, 0, 0">
                 <Label x:Name="label5" Content="Category Id" Width="131"/>
-                <ComboBox x:Name="cboCategoryId"  Grid.ColumnSpan="2" Width="306" Loaded="Window_Loaded" />
+                <ComboBox x:Name="cboCategoryId" Grid.ColumnSpan="2" Width="306" Loaded="Window_Loaded" SelectedValuePath="CategoryId" DisplayMemberPath="CategoryName" />
+
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0, 15, 0, 0">

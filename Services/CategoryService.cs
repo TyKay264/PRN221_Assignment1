@@ -23,7 +23,7 @@ namespace Services
 
         public void SaveCategory(Category category)
         {
-            short nextId = (short)(counter + 1);
+           /* short nextId = (short)(counter + 1);
 
             while (iCategoryRepository.GetCategoryById(nextId) != null)
             {
@@ -33,7 +33,7 @@ namespace Services
                 {
                     throw new InvalidOperationException("No available ID for SystemAccount");
                 }
-            }
+            } */
             iCategoryRepository.SaveCategory(category);
         }
 
@@ -50,6 +50,11 @@ namespace Services
         public void UpdateCategory(Category category)
         {
             iCategoryRepository.UpdateCategory(category);
+        }
+
+        public List<Category> GetCategoryByName(string name)
+        {
+            return iCategoryRepository.GetCategoryByName(name);
         }
     }
 }

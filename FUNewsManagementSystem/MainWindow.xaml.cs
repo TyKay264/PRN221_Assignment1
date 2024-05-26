@@ -71,9 +71,7 @@ namespace FUNewsManagementSystem
                     selectedNewsArticle.NewsTitle = txtNewsTitle.Text;
                     selectedNewsArticle.CreatedDate = txtCreatedDate.SelectedDate ?? DateTime.Now; 
                     selectedNewsArticle.NewsContent = txtNewsContent.Text;
-                    selectedNewsArticle.ModifiedDate = txtModifiedDate.SelectedDate ?? DateTime.Now;
-                    selectedNewsArticle.CategoryId = (short?)cboCategoryId.SelectedValue;
-                    //iNewsArticleService.UpdateNewsArticle(selectedNewsArticle);
+                    selectedNewsArticle.CategoryId = (short)cboCategoryId.SelectedValue;
                     UpdateNewsArticle updateNewsArticle = new UpdateNewsArticle(selectedNewsArticle);
                     updateNewsArticle.Show();
                     this.Close();
@@ -110,7 +108,7 @@ namespace FUNewsManagementSystem
                     selectedNewsArticle.CreatedById = Login.UserId;
                     if (cboCategoryId.SelectedItem != null)
                     {
-                        selectedNewsArticle.CategoryId = Int16.Parse(cboCategoryId.SelectedItem.ToString());
+                        selectedNewsArticle.CategoryId = (short)cboCategoryId.SelectedValue;
                     }
                     iNewsArticleService.DeleteNewsArticle(selectedNewsArticle);
                     LoadNewsArticle();
@@ -136,6 +134,8 @@ namespace FUNewsManagementSystem
         private void btnClose_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
+            MainMenu menu = new MainMenu();
+            menu.Show();
         }
 
         private void dgData_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -233,6 +233,18 @@ namespace FUNewsManagementSystem
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void btnSearch_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                List<NewsArticle> list = iNewsArticleService.GetNewsArticlesByTitle(txtSearch.Text);
+                dgData.ItemsSource = list;
+            } catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
     }

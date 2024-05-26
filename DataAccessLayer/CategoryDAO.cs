@@ -92,5 +92,11 @@ namespace DataAccessLayer
             return context.Categories.SingleOrDefault(c => c.CategoryId.Equals(id));
         }
 
+        public static List<Category> GetCategoryByName(string name)
+        {
+            using var context = new FunewsManagementDbContext();
+            return context.Categories.Where(c => c.CategoryName.Contains(name)).ToList();
+        }
+
     }
 }

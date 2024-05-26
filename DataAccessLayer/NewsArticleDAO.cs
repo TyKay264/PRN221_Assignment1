@@ -83,5 +83,26 @@ namespace DataAccessLayer
             }
             return listNewsArticles;
         }
+
+        public static List<NewsArticle> GetReportStatistic(DateTime start, DateTime end)
+        {
+            var listNewsArticles = new List<NewsArticle>();
+            try
+            {
+                using var context = new FunewsManagementDbContext();
+                listNewsArticles = context.NewsArticles.Where(c => c.CreatedDate >= start && c.CreatedDate <= end).ToList();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            return listNewsArticles;
+        }
+
+        public static List<NewsArticle> GetNewsArticlesByTitle(string title)
+        {
+            using var context = new FunewsManagementDbContext();
+            return context.NewsArticles.Where(c => c.NewsTitle.Contains(title)).ToList();
+        }
     }
 }

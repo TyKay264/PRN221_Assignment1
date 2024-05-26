@@ -30,17 +30,16 @@ namespace FUNewsManagementSystem
             int userRole = Login.UserRole;
             // resetInput();
 
-            if (userRole == 1)
+            if (userRole == 3)
             {
                 btnCreate.IsEnabled = true;
                 btnDelete.IsEnabled = true;
-                // dgData.IsEnabled = true;
             }
             else
             {
                 btnCreate.Visibility = Visibility.Collapsed;
                 btnDelete.Visibility = Visibility.Collapsed;
-                // dgData.Visibility = Visibility.Collapsed;
+                dgData.Visibility = Visibility.Collapsed;
             }
         }
 
@@ -91,7 +90,7 @@ namespace FUNewsManagementSystem
             try
             {
                 var selectedAccount = dgData.SelectedItem as SystemAccount;
-                if (selectedAccount != null && Login.UserRole == 1)
+                if (selectedAccount != null && Login.UserRole == 3)
                 {
                     selectedAccount.AccountName = txtAccountName.Text;
                     selectedAccount.AccountEmail = txtAccountEmail.Text;
@@ -106,7 +105,7 @@ namespace FUNewsManagementSystem
                     updateSystemAccount.Show();
                     this.Close();
                     LoadSystemAccount();
-                } else if (selectedAccount != null && Login.UserRole == 2 && Login.UserId == Int32.Parse(txtAccountID.Text))
+                } else if (selectedAccount != null && Login.UserId == Int32.Parse(txtAccountID.Text))
                 {
                     selectedAccount.AccountName = txtAccountName.Text;
                     selectedAccount.AccountEmail = txtAccountEmail.Text;
@@ -116,7 +115,6 @@ namespace FUNewsManagementSystem
                     }
                     selectedAccount.AccountPassword = txtAccountPassword.Password;
 
-                   // iSystemAccountService.UpdateSystemAccount(selectedAccount);
                     LoadSystemAccount();
                 }
                 else
@@ -141,6 +139,13 @@ namespace FUNewsManagementSystem
         private void btnClose_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
+            int userRole = Login.UserRole;
+            if (userRole == 3)
+            {
+                AdminMenu menu = new AdminMenu();
+                menu.Show();
+                return;
+            }
             MainMenu mainMenu = new MainMenu();
             mainMenu.Show();  
         }
@@ -195,6 +200,18 @@ namespace FUNewsManagementSystem
             cboAccountRole.ItemsSource = accountRoles;
             cboAccountRole.DisplayMemberPath = "AccountRoleName";
             cboAccountRole.SelectedValuePath = "AccountRoleId";
+        }
+
+        private void btnSearch_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                List<SystemAccount> list = iSystemAccountService.GetSystemAccountByName(txtSearch.Text);
+                dgData.ItemsSource = list;
+            } catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

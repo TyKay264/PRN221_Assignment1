@@ -25,14 +25,11 @@ Opacity="0.95">
                     <GradientStop Color="#FF472FDE" Offset="1"/>
                 </LinearGradientBrush>
             </Border.Background>
-            <Border BorderBrush="Black" BorderThickness="1">
-               
-                
-            </Border>
+            <Border BorderBrush="Black" BorderThickness="1"/>
         </Border>
         <Button x:Name="btnCategory" Content="Category Management" Margin="60,261,516,75" Click="btnCategory_Click" />
         <Button x:Name="btnNewsArticle" Content="News Article Management" Margin="517,261,59,75" Click="btnNewsArticle_Click" />
-        <Button Content="System Account Management" x:Name="btnSystemAccount" Margin="60,74,516,262" Click="btnSystemAccount_Click"/>
-        <Button Content="Button" Margin="517,74,59,262"/>
+        <Button Content="View Your Profile" x:Name="btnSystemAccount" Margin="60,74,516,262" Click="btnSystemAccount_Click"/>
+        <Button Content="Tag Management" x:Name="btnTag" Margin="517,74,59,262" Click="btnTag_Click"/>
     </Grid>
 </Window>

@@ -22,6 +22,7 @@ namespace FUNewsManagementSystem
         public MainMenu()
         {
             InitializeComponent();
+            int userRole = Login.UserRole;
         }
 
 
@@ -42,8 +43,15 @@ namespace FUNewsManagementSystem
         private void btnSystemAccount_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
-            AccountManagement accountManagement = new AccountManagement();
-            accountManagement.Show();
+            ViewYourProfile viewYourProfile = new ViewYourProfile();
+            viewYourProfile.Show();
+        }
+
+        private void btnTag_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+            TagList tagList = new TagList();
+            tagList.Show();
         }
     }
 }

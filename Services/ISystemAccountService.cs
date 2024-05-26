@@ -15,5 +15,6 @@ namespace Services
         void DeleteSystemAccount(SystemAccount newSystemAccount);
         void SaveSystemAccount (SystemAccount newSystemAccount);
         SystemAccount GetSystemAccountByUsername(string accountEmail);
+        List<SystemAccount> GetSystemAccountByName(string name);
     }
 }

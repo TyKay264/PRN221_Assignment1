@@ -54,11 +54,11 @@ namespace FUNewsManagementSystem
             if (enteredEmail.Equals(predefinedEmail, StringComparison.OrdinalIgnoreCase) &&
                 enteredPassword.Equals(predefinedPassword))
             {
-                UserRole = 1; // Assuming 1 indicates Admin
-                UserId = 1; // Dummy UserId for Admin
+                UserRole = 3; // Assuming 1 indicates Admin
+                UserId = 0; // Dummy UserId for Admin
 
                 this.Hide();
-                MainMenu main = new MainMenu();
+                AdminMenu main = new AdminMenu();
                 main.Show();
                 return;
             }

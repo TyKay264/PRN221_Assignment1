@@ -27,12 +27,15 @@
         <Button Content="Close" x:Name="btnClose" HorizontalAlignment="Left" Height="38" Margin="652,381,0,0" VerticalAlignment="Top" Width="91" Click="btnClose_Click"/>
         <Button Content="Delete" x:Name="btnDelete" HorizontalAlignment="Left" Height="38" Margin="433,381,0,0" VerticalAlignment="Top" Width="91" Click="btnDelete_Click"/>
         <Button Content="Update" x:Name="btnUpdate" HorizontalAlignment="Left" Height="38" Margin="215,381,0,0" VerticalAlignment="Top" Width="91" RenderTransformOrigin="1.673,0.62" Click="btnUpdate_Click"/>
-        <Label Content="Category Management&#xA;" HorizontalAlignment="Center" VerticalAlignment="Top" Height="51" Width="320" FontSize="30"/>
+        <Label Content="Category Management&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Height="51" Width="317" FontSize="30" Margin="64,5,0,0"/>
         <Label Content="CategoryId" HorizontalAlignment="Left" Margin="10,51,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.22,0.196" FontSize="20" Height="38" Width="109"/>
         <TextBox x:Name="txtCategoryId" HorizontalAlignment="Left" Margin="215,56,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="575" Height="33" IsEnabled="False"/>
         <Label Content="Category Description&#xA;" HorizontalAlignment="Left" Margin="10,141,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.22,0.196" FontSize="20" Height="38" Width="199"/>
         <Label Content="Category Name" HorizontalAlignment="Left" Margin="10,94,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.22,0.196" FontSize="20" Height="42" Width="151"/>
         <TextBox x:Name="txtCategoryName" HorizontalAlignment="Left" Margin="215,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="575" Height="36"/>
         <TextBox x:Name="txtCategoryDescription" HorizontalAlignment="Left" Margin="215,141,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="575" Height="37"/>
+        <TextBox x:Name="txtSearch" HorizontalAlignment="Left" Margin="587,22,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontWeight="Bold"/>
+        <Label Content="Search name" HorizontalAlignment="Left" Margin="504,18,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.448,0.211" FontWeight="Bold"/>
+        <Button Content="Search" x:Name="btnSearch" HorizontalAlignment="Left" Margin="723,19,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.023,-0.177" Height="23" Width="67" FontWeight="Bold" Click="btnSearch_Click"/>
     </Grid>
 </Window>

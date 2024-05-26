@@ -103,3 +103,15 @@ D:\Learning FPT\Kì_7\SWD392\FUNewsManagementSystemSolution\FUNewsManagementSyst
 D:\Learning FPT\Kì_7\SWD392\FUNewsManagementSystemSolution\FUNewsManagementSystem\obj\Debug\net7.0-windows\UpdateCategory.baml
 D:\Learning FPT\Kì_7\SWD392\FUNewsManagementSystemSolution\FUNewsManagementSystem\obj\Debug\net7.0-windows\UpdateNewsArticle.g.cs
 D:\Learning FPT\Kì_7\SWD392\FUNewsManagementSystemSolution\FUNewsManagementSystem\obj\Debug\net7.0-windows\UpdateNewsArticle.baml
+D:\Learning FPT\Kì_7\SWD392\FUNewsManagementSystemSolution\FUNewsManagementSystem\obj\Debug\net7.0-windows\Report.g.cs
+D:\Learning FPT\Kì_7\SWD392\FUNewsManagementSystemSolution\FUNewsManagementSystem\obj\Debug\net7.0-windows\Report.baml
+D:\Learning FPT\Kì_7\SWD392\FUNewsManagementSystemSolution\FUNewsManagementSystem\obj\Debug\net7.0-windows\AdminMenu.g.cs
+D:\Learning FPT\Kì_7\SWD392\FUNewsManagementSystemSolution\FUNewsManagementSystem\obj\Debug\net7.0-windows\AdminMenu.baml
+D:\Learning FPT\Kì_7\SWD392\FUNewsManagementSystemSolution\FUNewsManagementSystem\obj\Debug\net7.0-windows\TagList.g.cs
+D:\Learning FPT\Kì_7\SWD392\FUNewsManagementSystemSolution\FUNewsManagementSystem\obj\Debug\net7.0-windows\TagList.baml
+D:\Learning FPT\Kì_7\SWD392\FUNewsManagementSystemSolution\FUNewsManagementSystem\obj\Debug\net7.0-windows\CreateTag.g.cs
+D:\Learning FPT\Kì_7\SWD392\FUNewsManagementSystemSolution\FUNewsManagementSystem\obj\Debug\net7.0-windows\CreateTag.baml
+D:\Learning FPT\Kì_7\SWD392\FUNewsManagementSystemSolution\FUNewsManagementSystem\obj\Debug\net7.0-windows\UpdateTag.g.cs
+D:\Learning FPT\Kì_7\SWD392\FUNewsManagementSystemSolution\FUNewsManagementSystem\obj\Debug\net7.0-windows\UpdateTag.baml
+D:\Learning FPT\Kì_7\SWD392\FUNewsManagementSystemSolution\FUNewsManagementSystem\obj\Debug\net7.0-windows\ViewYourProfile.g.cs
+D:\Learning FPT\Kì_7\SWD392\FUNewsManagementSystemSolution\FUNewsManagementSystem\obj\Debug\net7.0-windows\ViewYourProfile.baml

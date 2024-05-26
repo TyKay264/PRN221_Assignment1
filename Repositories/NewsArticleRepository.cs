@@ -40,6 +40,15 @@ namespace Repositories
             NewsArticleDAO.UpdateNewsArticle(newsArticle);
         }
 
+        public List<NewsArticle> GetReportStatistic(DateTime start, DateTime end)
+        {
+            return NewsArticleDAO.GetReportStatistic(start, end);
+        }
+
+        public List<NewsArticle> GetNewsArticlesByTitle(string title)
+        {
+            return NewsArticleDAO.GetNewsArticlesByTitle(title);
+        }
 
     }
 }

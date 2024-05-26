@@ -14,5 +14,6 @@ namespace Repositories
         Category GetCategoryById(short id);
         void DeleteCategory(Category category);
         void UpdateCategory(Category category);
+        List<Category> GetCategoryByName(string name);
     }
 }

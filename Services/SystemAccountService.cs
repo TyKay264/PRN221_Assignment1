@@ -61,5 +61,10 @@ namespace Services
         {
             return iSystemAccountRepository.GetSystemAccountByUsername (accountEmail);
         }
+
+        public List<SystemAccount> GetSystemAccountByName(string name)
+        {
+            return iSystemAccountRepository.GetSystemAccountByName(name);
+        }
     }
 }

@@ -39,5 +39,10 @@ namespace Repositories
         {
             SystemAccountDAO.UpdateSystemAccount(newSystemAccount);
         }
+
+        public List<SystemAccount> GetSystemAccountByName(string name)
+        {
+            return SystemAccountDAO.GetSystemAccountByName(name);
+        }
     }
 }

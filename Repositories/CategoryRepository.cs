@@ -34,5 +34,10 @@ namespace Repositories
         {
             CategoryDAO.UpdateCategory(category);
         }
+
+        public List<Category> GetCategoryByName(string name)
+        {
+            return CategoryDAO.GetCategoryByName(name);
+        }
     }
 }

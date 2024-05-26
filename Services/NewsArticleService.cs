@@ -57,5 +57,15 @@ namespace Services
         {
             return iNewsArticleRepository.GetNewsArticlesByWriterId(writerId);
         }
+
+        public List<NewsArticle> GetReportStatistic(DateTime start, DateTime end)
+        {
+            return iNewsArticleRepository.GetReportStatistic(start, end);   
+        }
+
+        public List<NewsArticle> GetNewsArticlesByTitle(string title)
+        {
+            return iNewsArticleRepository.GetNewsArticlesByTitle(title);
+        }
     }
 }

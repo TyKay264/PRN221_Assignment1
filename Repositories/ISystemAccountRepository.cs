@@ -15,5 +15,6 @@ namespace Repositories
         void DeleteSystemAccount(SystemAccount newSystemAccount);
         void SaveSystemAccount(SystemAccount systemAccount);
         SystemAccount GetSystemAccountByUsername(string accountEmail);
+        List<SystemAccount> GetSystemAccountByName(string name);
     }
 }
