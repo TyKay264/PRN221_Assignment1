@@ -56,7 +56,7 @@ namespace DataAccessLayer
             {
                 using var context = new FunewsManagementDbContext();
                 var p1 = context.SystemAccounts.SingleOrDefault(c => c.AccountId == systemAccount.AccountId);
-                context.SystemAccounts.Remove(systemAccount);
+                context.SystemAccounts.Remove(p1);
                 context.SaveChanges();
             }
             catch (Exception ex)

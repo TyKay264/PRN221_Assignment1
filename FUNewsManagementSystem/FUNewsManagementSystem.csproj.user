@@ -10,6 +10,12 @@
     <Compile Update="AccountManagement.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="CategoryList.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CreateCategory.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="CreateNewsArticleWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -17,6 +23,15 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Login.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MainMenu.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UpdateCategory.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UpdateNewsArticle.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="UpdateSystemAccount.xaml.cs">
@@ -30,6 +45,12 @@
     <Page Update="AccountManagement.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="CategoryList.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CreateCategory.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="CreateNewsArticleWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -39,7 +60,16 @@
     <Page Update="Login.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="MainMenu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UpdateCategory.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UpdateNewsArticle.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="UpdateSystemAccount.xaml">

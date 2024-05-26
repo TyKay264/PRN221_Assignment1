@@ -93,3 +93,13 @@ D:\Learning FPT\Kì_7\SWD392\FUNewsManagementSystemSolution\FUNewsManagementSyst
 D:\Learning FPT\Kì_7\SWD392\FUNewsManagementSystemSolution\FUNewsManagementSystem\obj\Debug\net7.0-windows\CreateSystemAccount.baml
 D:\Learning FPT\Kì_7\SWD392\FUNewsManagementSystemSolution\FUNewsManagementSystem\obj\Debug\net7.0-windows\UpdateSystemAccount.g.cs
 D:\Learning FPT\Kì_7\SWD392\FUNewsManagementSystemSolution\FUNewsManagementSystem\obj\Debug\net7.0-windows\UpdateSystemAccount.baml
+D:\Learning FPT\Kì_7\SWD392\FUNewsManagementSystemSolution\FUNewsManagementSystem\obj\Debug\net7.0-windows\MainMenu.g.cs
+D:\Learning FPT\Kì_7\SWD392\FUNewsManagementSystemSolution\FUNewsManagementSystem\obj\Debug\net7.0-windows\MainMenu.baml
+D:\Learning FPT\Kì_7\SWD392\FUNewsManagementSystemSolution\FUNewsManagementSystem\obj\Debug\net7.0-windows\CategoryList.g.cs
+D:\Learning FPT\Kì_7\SWD392\FUNewsManagementSystemSolution\FUNewsManagementSystem\obj\Debug\net7.0-windows\CreateCategory.g.cs
+D:\Learning FPT\Kì_7\SWD392\FUNewsManagementSystemSolution\FUNewsManagementSystem\obj\Debug\net7.0-windows\CategoryList.baml
+D:\Learning FPT\Kì_7\SWD392\FUNewsManagementSystemSolution\FUNewsManagementSystem\obj\Debug\net7.0-windows\CreateCategory.baml
+D:\Learning FPT\Kì_7\SWD392\FUNewsManagementSystemSolution\FUNewsManagementSystem\obj\Debug\net7.0-windows\UpdateCategory.g.cs
+D:\Learning FPT\Kì_7\SWD392\FUNewsManagementSystemSolution\FUNewsManagementSystem\obj\Debug\net7.0-windows\UpdateCategory.baml
+D:\Learning FPT\Kì_7\SWD392\FUNewsManagementSystemSolution\FUNewsManagementSystem\obj\Debug\net7.0-windows\UpdateNewsArticle.g.cs
+D:\Learning FPT\Kì_7\SWD392\FUNewsManagementSystemSolution\FUNewsManagementSystem\obj\Debug\net7.0-windows\UpdateNewsArticle.baml

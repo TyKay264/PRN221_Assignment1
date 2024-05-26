@@ -49,11 +49,7 @@ namespace FUNewsManagementSystem
                 newsArticle.ModifiedDate = txtModifiedDate.SelectedDate ?? DateTime.Now;
                 newsArticle.NewsStatus = true;
                 newsArticle.CreatedById = Login.UserId;
-
-                if (cboCategoryId.SelectedItem != null)
-                {
-                    newsArticle.CategoryId = ((Category)cboCategoryId.SelectedItem).CategoryId;
-                }
+                newsArticle.CategoryId = (short?)cboCategoryId.SelectedValue;
 
                 iNewsArticlesService.SaveNewsArticle(newsArticle);
                 this.Close();
@@ -75,7 +71,7 @@ namespace FUNewsManagementSystem
                 var categoryList = iCategoryService.GetCategories();
                 cboCategoryId.ItemsSource = categoryList;
                 cboCategoryId.DisplayMemberPath = "CategoryName";
-                cboCategoryId.SelectedValuePath = "CategoryID";
+                cboCategoryId.SelectedValuePath = "CategoryId";
             }
             catch (Exception ex)
             {

@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 D:\Learning FPT\Kì_7\SWD392\FUNewsManagementSystemSolution\FUNewsManagementSystem\App.xaml
-7135642485
+12-1778726808
 
-91558694422
+14-220616663
 248-210003986
-AccountManagement.xaml;CreateNewsArticleWindow.xaml;CreateSystemAccount.xaml;Login.xaml;MainWindow.xaml;UpdateSystemAccount.xaml;ViewHistoryCreated.xaml;
+AccountManagement.xaml;CategoryList.xaml;CreateCategory.xaml;CreateNewsArticleWindow.xaml;CreateSystemAccount.xaml;Login.xaml;MainMenu.xaml;MainWindow.xaml;UpdateCategory.xaml;UpdateNewsArticle.xaml;UpdateSystemAccount.xaml;ViewHistoryCreated.xaml;
 
 False
 

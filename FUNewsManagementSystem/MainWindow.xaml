@@ -66,7 +66,7 @@
             <Label x:Name="label4" Margin ="2,2,2,2" Content="Modified Date" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="5"/>
             <DatePicker x:Name="txtModifiedDate" Margin ="4,4,4,4" Grid.Column="5" Grid.Row="5" Grid.ColumnSpan="2" IsEnabled="True"/>
             <Label x:Name="label5" Content="Category Id" Width="104" Grid.ColumnSpan="4" Margin="0,3,15,351" Grid.Row="6"/>
-            <ComboBox x:Name="cboCategoryId" Text=""  Margin ="4,4,4,364" Grid.Column="5" Grid.Row="6" Grid.ColumnSpan="2"/>
+            <ComboBox x:Name="cboCategoryId" Text="" DisplayMemberPath="CategoryName" SelectedValuePath="CategoryId"  Margin ="4,4,4,369" Grid.Column="5" Grid.Row="6" Grid.ColumnSpan="2"/>
 
 
 

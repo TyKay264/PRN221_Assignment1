@@ -10,9 +10,29 @@ namespace Repositories
 {
     public class CategoryRepository : ICategoryRepository
     {
+        public void DeleteCategory(Category category)
+        {
+            CategoryDAO.DeleteCategory(category);
+        }
+
         public List<Category> GetCategories()
         {
             return CategoryDAO.GetCategories();
+        }
+
+        public Category GetCategoryById(short id)
+        {
+            return CategoryDAO.GetCategoryById(id);
+        }
+
+        public void SaveCategory(Category category)
+        {
+            CategoryDAO.SaveCategory(category);
+        }
+
+        public void UpdateCategory(Category category)
+        {
+            CategoryDAO.UpdateCategory(category);
         }
     }
 }

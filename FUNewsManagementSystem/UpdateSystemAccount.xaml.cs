@@ -69,7 +69,6 @@ namespace FUNewsManagementSystem
 
         private void LoadAccountData()
         {
-            Console.WriteLine(_systemAccount.AccountRole);
             if (_systemAccount != null)
             {
                 txtAccountID.Text = _systemAccount.AccountId.ToString();

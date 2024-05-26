@@ -58,7 +58,7 @@ namespace FUNewsManagementSystem
                 UserId = 1; // Dummy UserId for Admin
 
                 this.Hide();
-                MainWindow main = new MainWindow();
+                MainMenu main = new MainMenu();
                 main.Show();
                 return;
             }
@@ -70,9 +70,9 @@ namespace FUNewsManagementSystem
                     UserRole = (int)account.AccountRole;
                     UserId = account.AccountId;
                     this.Hide();
-                    MainWindow main = new MainWindow();
+                    MainMenu main = new MainMenu();
                     main.Show();
-                }
+            }
                 else
             {
                 MessageBox.Show("Invalid credentials or you do not have permission to access this system.");

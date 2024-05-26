@@ -53,7 +53,36 @@ namespace FUNewsManagementSystem
 
         private void btnDelete_Click(object sender, RoutedEventArgs e)
         {
-
+            try
+            {
+                var selectedSystemAccount = dgData.SelectedItem as SystemAccount;
+                if (selectedSystemAccount != null)
+                {
+                    selectedSystemAccount.AccountName = txtAccountName.Text;
+                    selectedSystemAccount.AccountEmail = txtAccountEmail.Text;
+                    if (cboAccountRole.SelectedItem != null)
+                    {
+                        selectedSystemAccount.AccountRole = Int32.Parse(cboAccountRole.SelectedValue.ToString());
+                    }
+                    selectedSystemAccount.AccountPassword = txtAccountPassword.Password;
+                    selectedSystemAccount.AccountId = Int16.Parse(txtAccountID.Text.ToString());
+                    iSystemAccountService.DeleteSystemAccount(selectedSystemAccount);
+                    LoadSystemAccount();
+                }
+                else
+                {
+                    MessageBox.Show("You must select an Account or You don't have an authorization to Update");
+                }
+            }
+            catch (DbUpdateConcurrencyException ex)
+            {
+                MessageBox.Show("The account has been modified or deleted by another user. Please reload and try again.", "Concurrency Error", MessageBoxButton.OK, MessageBoxImage.Warning);
+                LoadSystemAccount();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
 
@@ -112,8 +141,8 @@ namespace FUNewsManagementSystem
         private void btnClose_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.Show();  
+            MainMenu mainMenu = new MainMenu();
+            mainMenu.Show();  
         }
 
 

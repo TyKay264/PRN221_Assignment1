@@ -71,9 +71,12 @@ namespace FUNewsManagementSystem
                     selectedNewsArticle.NewsTitle = txtNewsTitle.Text;
                     selectedNewsArticle.CreatedDate = txtCreatedDate.SelectedDate ?? DateTime.Now; 
                     selectedNewsArticle.NewsContent = txtNewsContent.Text;
-                    selectedNewsArticle.ModifiedDate = txtModifiedDate.SelectedDate ?? DateTime.Now; 
-
-                    iNewsArticleService.UpdateNewsArticle(selectedNewsArticle);
+                    selectedNewsArticle.ModifiedDate = txtModifiedDate.SelectedDate ?? DateTime.Now;
+                    selectedNewsArticle.CategoryId = (short?)cboCategoryId.SelectedValue;
+                    //iNewsArticleService.UpdateNewsArticle(selectedNewsArticle);
+                    UpdateNewsArticle updateNewsArticle = new UpdateNewsArticle(selectedNewsArticle);
+                    updateNewsArticle.Show();
+                    this.Close();
                     LoadNewsArticle();
                 }
                 else
@@ -105,10 +108,9 @@ namespace FUNewsManagementSystem
                     selectedNewsArticle.ModifiedDate = txtModifiedDate.SelectedDate ?? DateTime.Now;
                     selectedNewsArticle.NewsStatus = true;
                     selectedNewsArticle.CreatedById = Login.UserId;
-
                     if (cboCategoryId.SelectedItem != null)
                     {
-                        selectedNewsArticle.CategoryId = ((Category)cboCategoryId.SelectedItem).CategoryId;
+                        selectedNewsArticle.CategoryId = Int16.Parse(cboCategoryId.SelectedItem.ToString());
                     }
                     iNewsArticleService.DeleteNewsArticle(selectedNewsArticle);
                     LoadNewsArticle();
@@ -152,6 +154,7 @@ namespace FUNewsManagementSystem
                 txtCreatedDate.Text = newsArticle.CreatedDate.ToString();
                 txtNewsContent.Text = newsArticle.NewsContent;
                 txtModifiedDate.Text = newsArticle.ModifiedDate.ToString();
+                cboCategoryId.SelectedValue = newsArticle.CategoryId;
             }
         }
 
@@ -208,7 +211,7 @@ namespace FUNewsManagementSystem
                 var categoryList = iCategoryService.GetCategories();
                 cboCategoryId.ItemsSource = categoryList;
                 cboCategoryId.DisplayMemberPath = "CategoryName";
-                cboCategoryId.SelectedValuePath = "CategoryID";
+                cboCategoryId.SelectedValuePath = "CategoryId";
             }
             catch (Exception ex)
             {

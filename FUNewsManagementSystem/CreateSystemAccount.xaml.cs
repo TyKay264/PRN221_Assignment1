@@ -58,36 +58,7 @@ namespace FUNewsManagementSystem
             accountManagement.Show();
         }
 
-        /*private void btnCreate_Click(object sender, RoutedEventArgs e)
-        {
-            NewsArticle newsArticle = new NewsArticle();
-            try
-            {
-                newsArticle.NewsTitle = txtNewsTitle.Text;
-                newsArticle.CreatedDate = txtCreatedDate.SelectedDate ?? DateTime.Now;
-                newsArticle.NewsContent = txtNewsContent.Text;
-                newsArticle.ModifiedDate = txtModifiedDate.SelectedDate ?? DateTime.Now;
-                newsArticle.NewsStatus = true;
-                newsArticle.CreatedById = Login.UserId;
-
-                if (cboCategoryId.SelectedItem != null)
-                {
-                    newsArticle.CategoryId = ((Category)cboCategoryId.SelectedItem).CategoryId;
-                }
-
-                iNewsArticlesService.SaveNewsArticle(newsArticle);
-                this.Close();
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
-            finally
-            {
-                MainWindow main = new MainWindow();
-                main.Show();
-            }
-        }*/
+   
 
         public void LoadAcountRole()
         {
