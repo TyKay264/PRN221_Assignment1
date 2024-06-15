@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yVcUtc0OOB6kc317tEKln1S630B2SWJ/CURVLylfsSEufj9JRTow5NQJC/VhUnSPJoqofLvzSAhXqz4mTFU10w==",
+  "dgSpecHash": "NNfbO62dRQU=",
   "success": true,
-  "projectFilePath": "D:\\Learning FPT\\Kì_7\\SWD392\\FUNewsManagementSystemSolution\\FUNewsManagementSystem\\FUNewsManagementSystem.csproj",
+  "projectFilePath": "D:\\Learning FPT\\Kì_7\\PRN221\\Project\\Phan Thanh Khải_NET1709_SE173240\\PRN221_Assignment1\\FUNewsManagementSystem\\FUNewsManagementSystem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Acer\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

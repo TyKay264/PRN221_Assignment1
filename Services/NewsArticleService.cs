@@ -46,7 +46,7 @@ namespace Services
                 newsArticle.NewsArticleId = nextId.ToString();
             }
             iNewsArticleRepository.SaveNewsArticle(newsArticle);
-        }
+            }
 
         public void UpdateNewsArticle(NewsArticle newsArticle)
         {

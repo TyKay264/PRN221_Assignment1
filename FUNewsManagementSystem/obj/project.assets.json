@@ -3257,11 +3257,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Learning FPT\\Kì_7\\SWD392\\FUNewsManagementSystemSolution\\FUNewsManagementSystem\\FUNewsManagementSystem.csproj",
+      "projectUniqueName": "D:\\Learning FPT\\Kì_7\\PRN221\\Project\\Phan Thanh Khải_NET1709_SE173240\\PRN221_Assignment1\\FUNewsManagementSystem\\FUNewsManagementSystem.csproj",
       "projectName": "FUNewsManagementSystem",
-      "projectPath": "D:\\Learning FPT\\Kì_7\\SWD392\\FUNewsManagementSystemSolution\\FUNewsManagementSystem\\FUNewsManagementSystem.csproj",
+      "projectPath": "D:\\Learning FPT\\Kì_7\\PRN221\\Project\\Phan Thanh Khải_NET1709_SE173240\\PRN221_Assignment1\\FUNewsManagementSystem\\FUNewsManagementSystem.csproj",
       "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-      "outputPath": "D:\\Learning FPT\\Kì_7\\SWD392\\FUNewsManagementSystemSolution\\FUNewsManagementSystem\\obj\\",
+      "outputPath": "D:\\Learning FPT\\Kì_7\\PRN221\\Project\\Phan Thanh Khải_NET1709_SE173240\\PRN221_Assignment1\\FUNewsManagementSystem\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3272,17 +3272,18 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
           "projectReferences": {
-            "D:\\Learning FPT\\Kì_7\\SWD392\\FUNewsManagementSystemSolution\\Repositories\\Repositories.csproj": {
-              "projectPath": "D:\\Learning FPT\\Kì_7\\SWD392\\FUNewsManagementSystemSolution\\Repositories\\Repositories.csproj"
+            "D:\\Learning FPT\\Kì_7\\PRN221\\Project\\Phan Thanh Khải_NET1709_SE173240\\PRN221_Assignment1\\Repositories\\Repositories.csproj": {
+              "projectPath": "D:\\Learning FPT\\Kì_7\\PRN221\\Project\\Phan Thanh Khải_NET1709_SE173240\\PRN221_Assignment1\\Repositories\\Repositories.csproj"
             },
-            "D:\\Learning FPT\\Kì_7\\SWD392\\FUNewsManagementSystemSolution\\Services\\Services.csproj": {
-              "projectPath": "D:\\Learning FPT\\Kì_7\\SWD392\\FUNewsManagementSystemSolution\\Services\\Services.csproj"
+            "D:\\Learning FPT\\Kì_7\\PRN221\\Project\\Phan Thanh Khải_NET1709_SE173240\\PRN221_Assignment1\\Services\\Services.csproj": {
+              "projectPath": "D:\\Learning FPT\\Kì_7\\PRN221\\Project\\Phan Thanh Khải_NET1709_SE173240\\PRN221_Assignment1\\Services\\Services.csproj"
             }
           }
         }
@@ -3291,6 +3292,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -3315,7 +3321,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,4 +1,5 @@
 ﻿using BusinessObjects;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +16,10 @@ namespace DataAccessLayer
             try
             {
                 using var context = new FunewsManagementDbContext();
-                listNewsArticles =  context.NewsArticles.ToList();
+                listNewsArticles =  context.NewsArticles
+                        .Include(a => a.Category)
+                        .Include(a => a.CreatedBy)
+                        .ToList();
             } catch (Exception ex)
             {
                 throw new Exception(ex.Message);
@@ -66,7 +70,10 @@ namespace DataAccessLayer
         public static NewsArticle GetNewsArticlesById(string id)
         {
             using var context = new FunewsManagementDbContext();
-            return context.NewsArticles.SingleOrDefault(c => c.NewsArticleId.Equals(id));
+            return context.NewsArticles
+                .Include(na => na.Category)
+                .Include(na => na.CreatedBy)
+                .SingleOrDefault(c => c.NewsArticleId.Equals(id));
         }
 
         public static List<NewsArticle> GetNewsArticlesByWriterId(int writerId)
